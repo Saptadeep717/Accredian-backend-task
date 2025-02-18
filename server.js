@@ -10,7 +10,7 @@ app.use(cors());
 app.use("/api/v1/referral", referralRoutes);
 
 const PORT = process.env.PORT || 4000;
-app.get('/',()=>{
+app.get('/',(req,res)=>{
     res.send("Hello Server!");  
 })
 app.listen(PORT, () => {
